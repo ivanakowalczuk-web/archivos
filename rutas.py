@@ -14,15 +14,15 @@ os.chdir(nueva_ruta)
 print("Ahora estás en:", Path.cwd())
 
 # Crear un archivo dentro del nuevo directorio
-#archivo = Path("saludo.txt")
-#archivo.write_text("Hola, estoy acá", encoding="utf-8")
-with open("saludo.txt", "r+", encoding="utf-8") as f:
-    f.write("Hola, estoy acá")
-    f.seek(0)  # vuelve al principio del archivo
-    contenido = f.read()
+archivo = Path("saludo.txt")
+archivo.write_text("Hola, estoy acá", encoding="utf-8")
+# with open("saludo.txt", "w+", encoding="utf-8") as f:
+#     f.write("Hola, estoy acá")
+#     f.seek(0)  # vuelve al principio del archivo
+#     contenido = f.read()
 
-print("Contenido del archivo:", contenido)
+# print("Contenido del archivo:", contenido)
 
 # Leer y mostrar el contenido del archivo para verificar
-#contenido = archivo.read_text(encoding="utf-8")
-#print("Contenido del archivo:", contenido)
+contenido = archivo.read_text(encoding="utf-8")
+print("Contenido del archivo:", contenido)

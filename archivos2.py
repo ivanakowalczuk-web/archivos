@@ -35,7 +35,7 @@ archivo_renombrado = carpeta / "archivo_final.txt"
 archivo.rename(archivo_renombrado)
 print("\nArchivo renombrado a:", archivo_renombrado.name)
 
-# Eliminar el archivo y la carpeta
+#Eliminar el archivo y la carpeta
 #archivo_renombrado.unlink()
 #carpeta.rmdir()
 #print("\nArchivo y carpeta eliminados correctamente.")
